@@ -3,12 +3,28 @@
 
 
 
+//using for loop
+// function spinWords(str) {
+//   let strArr = str.split(' ');
+//   for (let i = 0; i < strArr.length; i++) {
+//     if (strArr[i].length >= 5)
+//     console.log(strArr[i].split('').reverse().join(''))
+//       strArr[i] = strArr[i].split('').reverse().join('');
 
-function spinWords(words){
-  return words.split(' ').map(function (word) {
-    return (word.length > 4) ? word.split('').reverse().join('') : word;
-  }).join(' ')
+//       console.log(strArr[i])
+//   }
+//   return strArr.join(' ');
+// }
+
+
+//using map
+function spinWords(str) {
+  return str.split(' ').map((word) => word.length > 4 ? word.split('').reverse().join('') : word).join(' ');
 }
 
 console.log((spinWords("Welcome")))
 console.log(spinWords("Hey fellow warriors"))
+
+
+
+

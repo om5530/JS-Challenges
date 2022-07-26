@@ -26,3 +26,15 @@ console.log(multiply1(4, 5))
 console.log(multiply1(1, 2, 3, 5))
 //1*2*3*5 = 30
 console.log(multiply1(2,0,4,2))
+
+
+function add(){
+  args = [...arguments]
+  sum = 0
+  const result = args.map((item)=>{
+    sum += item
+  })
+  return result
+}
+
+console.log(add((1)(2)(3)(4)))
