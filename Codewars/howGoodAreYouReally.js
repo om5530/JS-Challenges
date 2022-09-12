@@ -9,24 +9,28 @@
 // Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
 
 
-function betterThanAverage(classPoints, yourPoints) {
-  let sum = 0
-  classPoints.map((item)=>{
-    sum += item
-  })
-  let average = (sum/classPoints.length)
+// function betterThanAverage(classPoints, yourPoints) {
+//   let sum = 0
+//   classPoints.map((item)=>{
+//     sum += item
+//   })
+//   let average = (sum/classPoints.length)
 
-   return yourPoints > average
-}
+//    return yourPoints > average
+// }
+
+
 
 //clever 
-function betterThanAverage(classPoints, yourPoints) {
-  return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
-}
-
-console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88],75))
+// function betterThanAverage(classPoints, yourPoints) {
+//   return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
+// }
 
 
+
+// console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88],75))
+
+// console.log(betterThanAverage([41, 75, 72, 56, 80, 82, 81, 33], 50), false);
 // describe("Example Tests", function() {
 //   it("betterThanAverage([2, 3], 5) should return True", function() {
 //     assert.strictEqual(betterThanAverage([2, 3], 5), true);

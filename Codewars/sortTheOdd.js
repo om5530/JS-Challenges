@@ -19,20 +19,6 @@ function sortItOut(array){
   return array.filter(a => Math.floor(a) % 2 !== 0).sort((a,b) => a - b)
   .concat(array.filter(a => Math.floor(a) % 2 === 0).sort((a,b) => b - a))
 }
+
 console.log(sortItOut([ 11, 33, 55, 55, 90.4, 4, 22, 44, 78 ]))
 console.log(sortItOut([ 1.1, 2.2, 3.3, 4.4, 5.5, 6.6  ]))
-
-
-
-
-function findMissingLetter(array) {
-  let first = array[0].charCodeAt(0)
-  for (let i = 1; i < array.length; i++) {
-    if (first + i !== array[i].charCodeAt(0)) {
-      return String.fromCharCode(first + i)
-    }
-  }
-  throw new Error("Invalid input")
-}
-
-console.log(findMissingLetter(['a','b','c','d','f']))

@@ -13,6 +13,32 @@
 // Error checking for text strings or other invalid inputs is not required, only valid positive non-zero integers will be passed into the function.
 
 
+
+
+
+
+function narcissistic(digits) {
+  let temp = digits.toString().split('')
+  console.log(temp)
+  let sum = 0
+  temp.map((ele)=>{
+  sum += Math.pow(ele,temp.length)
+  })
+  return sum === digits;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 //for loop
 // function narcissistic(value) {
 //   let temp = value.toString().split('')
@@ -29,12 +55,13 @@
 // }
 
 //map 
-function narcissistic(value) {
-  let tempArr = [...value.toString()]
-  let sum = null
-  tempArr.map((item)=> sum = sum + Math.pow(item, tempArr.length)  )
-  return sum === value
-}
+// function narcissistic(value) {
+//   let tempArr = [...value.toString()]
+//   let sum = null
+//   tempArr.map((item)=> sum = sum + Math.pow(item, tempArr.length)  )
+//   return sum === value
+// }
 
 
 console.log(narcissistic(153))
+console.log(narcissistic(1652))

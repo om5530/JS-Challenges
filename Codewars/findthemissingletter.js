@@ -12,13 +12,6 @@ console.log(findMissingLetter(['a','b','c','d','f']))
 
 
 
-
-
-
-
-
-
-
 function findMissingLetter(array) {
   
   const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 

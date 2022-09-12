@@ -7,9 +7,11 @@
 // -34: 34
 
 
-function opposite(number) {
-  return (number === 0) ? 0 : -number
-}
+// function opposite(number) {
+//   return (number === 0) ? 0 : -number
+// }
+
+
 
 
 

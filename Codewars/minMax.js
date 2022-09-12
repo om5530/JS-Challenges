@@ -23,5 +23,5 @@ function minMax(arr){
 
 console.log(minMax([2, 1, 3, 4, 5]))
 console.log(minMax([2334454, 5]))
-console.log(minMax([ 5]))
+console.log(minMax([5]))
 

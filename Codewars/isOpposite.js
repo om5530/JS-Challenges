@@ -9,7 +9,9 @@ function isOpposite(s1,s2){
   }
       
   for (let i = 0; i < s1.length; i++){
+    console.log(s1[i])
     if (s1[i] === s2[i])
+
       return false
   }
   
@@ -17,12 +19,14 @@ function isOpposite(s1,s2){
   
 }
 
+
 // function isOpposite(s1,s2){
-//   let s1 =  s1.split(' ').filter((item)=> item) 
-//   console.log(s1)
-//   s2.split(' ').map((item)=> item)
-//   console.log(s2)
-//  }
+//   if(s1.length !== s2.length || s1 == '' || s2 == ''){
+//     return false
+//   }
+
+//   return s1.toLowerCase() === s2.toLowerCase();
+// }
 
 
 console.log(isOpposite("ab","AB") , true);

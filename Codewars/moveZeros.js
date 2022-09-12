@@ -1,17 +1,17 @@
 // Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
 
 // moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
-function moveZeros(arr) {
-  let zeroArr = []
-  let filteredArr = arr.filter((item) => item !== 0)
-  // console.log(filteredArr)
-  // let descendingOrder = arr.sort((a, b) => b - a)
-  // console.log(descendingOrder)
-  arr.map((ele) => {
-    if (ele === 0) return zeroArr.push(ele)
-  })
-  return [...filteredArr,...zeroArr]
-}
+// function moveZeros(arr) {
+//   let zeroArr = []
+//   let filteredArr = arr.filter((item) => item !== 0)
+//   // console.log(filteredArr)
+//   // let descendingOrder = arr.sort((a, b) => b - a)
+//   // console.log(descendingOrder)
+//   arr.map((ele) => {
+//     if (ele === 0) return zeroArr.push(ele)
+//   })
+//   return [...filteredArr,...zeroArr]
+// }
 
 
 //clever
@@ -36,6 +36,30 @@ function moveZeros(arr) {
 // return [...other,...zero]
 // }
 
+function moveZeros(arr){
+let arrayWithNumbers = []
+let zeros = []
+// for(let ele of arr){
+//   console.log(ele)
+//    if(ele > 0){
+//     arrayWithNumbers.push(ele)
+//    }else{
+//     zeros.push(ele);
+//    }
+// }
+// for(let i= 0; i<arr.length; i++){
+//   console.log(i)
+//   console.log(arr[i])
+//    if(arr[i] > 0){
+//     arrayWithNumbers.push(arr[i])
+//    }else{
+//     zeros.push(arr[i])
+//    }
+
+// }
+  return [...arrayWithNumbers,...zeros]
+ }
+
 let result = moveZeros([1, 2, 0, 1, 0, 1, 0, 3, 0, 1])
 console.log(result);
 
@@ -45,14 +69,14 @@ console.log(moveZeros([false,1,0,1,2,0,1,3,"a"]))
 
 
 
-function moveZeros(arr) {
-  let zeroArr = []
-  let filteredArr = arr.filter((item) => item !== 0)
-  arr.map((ele) => {
-    if (ele === 0) return zeroArr.push(ele)
-  })
-  return [...filteredArr,...zeroArr]
-}
+// function moveZeros(arr) {
+//   let zeroArr = []
+//   let filteredArr = arr.filter((item) => item !== 0)
+//   arr.map((ele) => {
+//     if (ele === 0) return zeroArr.push(ele)
+//   })
+//   return [...filteredArr,...zeroArr]
+// }
 
 
 var i = 0, j = 0;

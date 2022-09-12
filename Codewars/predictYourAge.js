@@ -13,6 +13,22 @@
 
 // Some random tests might fail due to a bug in the JavaScript implementation. Simply resubmit if that happens to you.
 
+
+// function predictAge(...args){
+//   console.log(args)
+//   result = 0
+//   result
+//   args.map((ele)=>{
+//     result += ele*ele
+//   })
+//   console.log(result)
+//   finalAge = Math.floor(Math.sqrt(result) / 2)
+//   // console.log(finalAge)
+//   return finalAge
+// }
+
+
+
 // function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
 //   let total = (age1 * age1) + (age2 * age2) + (age3 * age3) + (age4 * age4) + (age5 * age5) + (age6 * age6) + (age7 * age7) + (age8 * age8)
 //   return  Math.floor(Math.sqrt(total)/2)
@@ -20,15 +36,15 @@
 
 
 //clever
-const predictAge = (...ages) => Math.hypot(...ages) / 2 | 0;
+// const predictAge = (...ages) => Math.hypot(...ages) / 2 | 0;
 
 
-//anothor 
-function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
-  let sum = [...arguments]
-    .map(x=>x**2)
-    .reduce((sum,v)=>sum+v,0)
-  return Math.floor( Math.sqrt(sum)/2 )
-}
+// //anothor 
+// function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+//   let sum = [...arguments]
+//     .map(x=>x**2)
+//     .reduce((sum,v)=>sum+v,0)
+//   return Math.floor( Math.sqrt(sum)/2 )
+// }
 
 console.log(predictAge(65,60,75,55,60,63,64,45), 86); 

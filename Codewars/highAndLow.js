@@ -6,14 +6,20 @@
 // highAndLow("1 9 3 4 -5"); // return "9 -5"
 
 
+// function highAndLow(numbers) {
+//   let sorted = numbers.split(' ').sort((a,b)=>b-a)
+//    return `${sorted[0]} ${sorted[sorted.length-1]}`
+//    //a-b = accending 
+//    //b-a = desending
+//  }
 
+// function highAndLow (number){
+// let x =  number.split(' ')
+//  console.log(x)
+//  console.log(...x)
+//  return `${Math.max(...x)} ${Math.min(...x)}`
+// }
 
-
-function highAndLow(numbers) {
-  let sorted = numbers.split(' ').sort((a,b)=>b-a)
-   return `${sorted[0]} ${sorted[sorted.length-1]}`
- }
-
-// console.log(highAndLow("1 3 2"))
-// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"), "42 -9");
-// console.log(highAndLow("1 2 3"), "3 1");
+console.log(highAndLow("1 3 2"))
+console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"), "42 -9");
+console.log(highAndLow("1 2 3"), "3 1");

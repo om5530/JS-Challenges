@@ -4,21 +4,22 @@
 
 // If you can, try writing it in only one line of code.
 
-function findMultiples(int,limit){
-  let result = []
+// function findMultiples(int,limit){
+//   let result = []
   
-  for (let i = int; i<=limit ; i+=int)
-    result.push(i)
+//   for (let i = int; i<=limit ; i+=int)
+//     result.push(i)
     
-  return result
-}
+//   return result
+// }
 
-console.log((findMultiples(5, 25)))
-// [5, 10, 15, 20, 25]
-console.log(findMultiples(1, 2))
-console.log(findMultiples(5, 7))
-console.log(findMultiples(4, 27))
-console.log(findMultiples(11, 54))
+
+// console.log((findMultiples(5, 25)))
+// // [5, 10, 15, 20, 25]
+// console.log(findMultiples(1, 2))
+// console.log(findMultiples(5, 7))
+// console.log(findMultiples(4, 27))
+// console.log(findMultiples(11, 54))
 
 
 
