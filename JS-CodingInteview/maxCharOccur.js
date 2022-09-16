@@ -1,7 +1,5 @@
-
 // 32eddseew3
 // #he3#33ll#l#o
-
 
 //find the character that appears the most and total number of time it appears
 

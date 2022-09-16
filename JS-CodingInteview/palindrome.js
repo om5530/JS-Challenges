@@ -2,9 +2,6 @@
 // palindrome('abba') === true
 // palindrome('abcdrfg') === false
 
-
-
-
 // solution 1
 // reverse the string 
 // check with original if they are same
