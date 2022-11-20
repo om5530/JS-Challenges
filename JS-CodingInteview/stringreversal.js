@@ -29,6 +29,15 @@ function reverse(str) {
 
 reverse('apple omkar ');
 
+function reverse(str){
+  let rev = ''
+  for(let char of str){
+    rev = char + rev
+  }
+  return rev
+}
+console.log(reverse('omkar'))
+
 
 
 
